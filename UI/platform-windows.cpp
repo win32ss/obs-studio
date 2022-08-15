@@ -513,7 +513,6 @@ void TaskbarOverlaySetStatus(TaskbarOverlayStatus status)
 				   IID_PPV_ARGS(&taskbarIcon));
 
 	if (FAILED(hr)) {
-		taskbarIcon->Release();
 		return;
 	}
 
